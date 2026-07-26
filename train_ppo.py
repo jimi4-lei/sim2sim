@@ -16,7 +16,7 @@ import torch.nn as nn
 import torch.optim as optim
 import numpy as np
 from isaaclab.envs import ManagerBasedRLEnv
-from isaaclab_tasks.core.velocity.config.dog.flat_env_cfg import DogFlatEnvCfg
+from isaaclab_tasks.core.velocity.config.dog.flat_env_cfg_simple import DogFlatEnvCfgSimple
 from torch.utils.tensorboard import SummaryWriter
 
 class SimpleEnvAdapter:
@@ -104,7 +104,7 @@ class Value(nn.Module):
 def main():
     print("Setting up environment...")
     
-    env_cfg = DogFlatEnvCfg()
+    env_cfg = DogFlatEnvCfgSimple()
     if args.num_envs is not None:
         env_cfg.scene.num_envs = args.num_envs
     
