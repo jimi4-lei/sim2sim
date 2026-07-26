@@ -24,7 +24,7 @@ class SimpleEnvAdapter:
         self.env = env
         self.num_envs = env.num_envs
         self.device = env.device
-        self.num_obs = 48
+        self.num_obs = env.observation_space["policy"].shape[0]
         self.num_actions = 12
         self._cached_obs = None
         self.cfg = {"env_name": "anymal_d_flat", "num_envs": self.num_envs}
@@ -65,7 +65,9 @@ class Policy(nn.Module):
             prev_dim = h_dim
         layers.append(nn.Linear(prev_dim, action_dim))
         self.mlp = nn.Sequential(*layers)
-        self.log_std = nn.Parameter(torch.zeros(action_dim))
+        self.log_std = nn.Parameter(
+            torch.ones(action_dim)*-1
+        )
         
     def forward(self, obs):
         mean = self.mlp(obs)
@@ -75,7 +77,8 @@ class Policy(nn.Module):
     def get_action(self, obs):
         mean, std = self.forward(obs)
         dist = torch.distributions.Normal(mean, std)
-        action = dist.sample()
+        raw_action = dist.rsample()
+        action = torch.tanh(raw_action)
         log_prob = dist.log_prob(action).sum(dim=-1, keepdim=True)
         return action, log_prob, mean, std
     
