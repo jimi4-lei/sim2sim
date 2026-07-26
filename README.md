@@ -1,3 +1,10 @@
+./isaaclab.sh -p train_ppo.py \
+--headless \
+--num_envs 128 \
+--num_steps 64 \
+--max_iterations 30000
+
+
 [INFO]: Completed setting up the environment...
 Environment created with 32 envs
 TensorBoard logs will be saved to ./logs/tensorboard
