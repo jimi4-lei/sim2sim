@@ -1,315 +1,64 @@
-./isaaclab.sh -p train_ppo.py \
---headless \
---num_envs 128 \
---num_steps 64 \
---max_iterations 30000
 
+cd ~/IsaacLab
+./isaaclab.sh -p train_dog_rsl.py --headless --num_envs 2048 --max_iterations 3000
+[INFO] Curriculum Manager:  <CurriculumManager> contains 0 active terms.
++-------------------------+
+| Active Curriculum Terms |
++-------------+-----------+
+|    Index    | Name      |
++-------------+-----------+
++-------------+-----------+
 
 [INFO]: Completed setting up the environment...
-Environment created with 32 envs
-TensorBoard logs will be saved to ./logs/tensorboard
-Starting PPO training...
-Iteration 0: Avg Reward: -0.6219, Avg Value: -0.0035
-Iteration 10: Avg Reward: -0.5974, Avg Value: -0.6049
-Iteration 20: Avg Reward: -0.5770, Avg Value: -0.5901
-Iteration 30: Avg Reward: -0.5673, Avg Value: -0.5705
-Iteration 40: Avg Reward: -0.5482, Avg Value: -0.5574
-Iteration 50: Avg Reward: -0.5177, Avg Value: -0.5309
-Iteration 60: Avg Reward: -0.5193, Avg Value: -0.5131
-Iteration 70: Avg Reward: -0.5039, Avg Value: -0.5155
-Iteration 80: Avg Reward: -0.5136, Avg Value: -0.5222
-Iteration 90: Avg Reward: -0.4939, Avg Value: -0.5126
-Iteration 100: Avg Reward: -0.4878, Avg Value: -0.4863
-Iteration 110: Avg Reward: -0.5029, Avg Value: -0.4815
-Iteration 120: Avg Reward: -0.4970, Avg Value: -0.4907
-Iteration 130: Avg Reward: -0.4795, Avg Value: -0.4908
-Iteration 140: Avg Reward: -0.4917, Avg Value: -0.4680
-Iteration 150: Avg Reward: -0.4986, Avg Value: -0.4988
-Iteration 160: Avg Reward: -0.4739, Avg Value: -0.4613
-Iteration 170: Avg Reward: -0.4797, Avg Value: -0.4619
-Iteration 180: Avg Reward: -0.4634, Avg Value: -0.4504
-Iteration 190: Avg Reward: -0.4953, Avg Value: -0.4858
-Iteration 200: Avg Reward: -0.4766, Avg Value: -0.4977
-Iteration 210: Avg Reward: -0.4669, Avg Value: -0.4638
-Iteration 220: Avg Reward: -0.4594, Avg Value: -0.4693
-Iteration 230: Avg Reward: -0.4653, Avg Value: -0.4467
-Iteration 240: Avg Reward: -0.4772, Avg Value: -0.4512
-Iteration 250: Avg Reward: -0.4642, Avg Value: -0.4710
-Iteration 260: Avg Reward: -0.4737, Avg Value: -0.4745
-Iteration 270: Avg Reward: -0.4467, Avg Value: -0.4366
-Iteration 280: Avg Reward: -0.4461, Avg Value: -0.4663
-Iteration 290: Avg Reward: -0.4483, Avg Value: -0.4470
-Iteration 300: Avg Reward: -0.4627, Avg Value: -0.4589
-Iteration 310: Avg Reward: -0.4683, Avg Value: -0.4546
-Iteration 320: Avg Reward: -0.4516, Avg Value: -0.4661
-Iteration 330: Avg Reward: -0.4407, Avg Value: -0.4620
-Iteration 340: Avg Reward: -0.4525, Avg Value: -0.4661
-Iteration 350: Avg Reward: -0.4616, Avg Value: -0.4417
-Iteration 360: Avg Reward: -0.4576, Avg Value: -0.4493
-Iteration 370: Avg Reward: -0.4605, Avg Value: -0.4588
-Iteration 380: Avg Reward: -0.4557, Avg Value: -0.4707
-Iteration 390: Avg Reward: -0.4545, Avg Value: -0.4533
-Iteration 400: Avg Reward: -0.4590, Avg Value: -0.4608
-Iteration 410: Avg Reward: -0.4355, Avg Value: -0.4726
-Iteration 420: Avg Reward: -0.4415, Avg Value: -0.4605
-Iteration 430: Avg Reward: -0.4520, Avg Value: -0.4384
-Iteration 440: Avg Reward: -0.4650, Avg Value: -0.4561
-Iteration 450: Avg Reward: -0.4293, Avg Value: -0.4348
-Iteration 460: Avg Reward: -0.4491, Avg Value: -0.4454
-Iteration 470: Avg Reward: -0.4554, Avg Value: -0.4433
-Iteration 480: Avg Reward: -0.4547, Avg Value: -0.4500
-Iteration 490: Avg Reward: -0.4372, Avg Value: -0.4457
-Iteration 500: Avg Reward: -0.4690, Avg Value: -0.4496
-Iteration 510: Avg Reward: -0.4603, Avg Value: -0.4668
-Iteration 520: Avg Reward: -0.4738, Avg Value: -0.4546
-Iteration 530: Avg Reward: -0.4495, Avg Value: -0.4515
-Iteration 540: Avg Reward: -0.4458, Avg Value: -0.4357
-Iteration 550: Avg Reward: -0.4588, Avg Value: -0.4401
-Iteration 560: Avg Reward: -0.4720, Avg Value: -0.4643
-Iteration 570: Avg Reward: -0.4517, Avg Value: -0.4416
-Iteration 580: Avg Reward: -0.4688, Avg Value: -0.4659
-Iteration 590: Avg Reward: -0.4564, Avg Value: -0.4521
-Iteration 600: Avg Reward: -0.4442, Avg Value: -0.4644
-Iteration 610: Avg Reward: -0.4669, Avg Value: -0.4487
-Iteration 620: Avg Reward: -0.4474, Avg Value: -0.4462
-Iteration 630: Avg Reward: -0.4644, Avg Value: -0.4504
-Iteration 640: Avg Reward: -0.4637, Avg Value: -0.4364
-Iteration 650: Avg Reward: -0.4709, Avg Value: -0.4575
-Iteration 660: Avg Reward: -0.4723, Avg Value: -0.4766
-Iteration 670: Avg Reward: -0.4531, Avg Value: -0.4525
-Iteration 680: Avg Reward: -0.4479, Avg Value: -0.4564
-Iteration 690: Avg Reward: -0.4709, Avg Value: -0.4506
-Iteration 700: Avg Reward: -0.4685, Avg Value: -0.4586
-Iteration 710: Avg Reward: -0.4518, Avg Value: -0.4444
-Iteration 720: Avg Reward: -0.4562, Avg Value: -0.4524
-Iteration 730: Avg Reward: -0.4433, Avg Value: -0.4518
-Iteration 740: Avg Reward: -0.4306, Avg Value: -0.4509
-Iteration 750: Avg Reward: -0.4553, Avg Value: -0.4394
-Iteration 760: Avg Reward: -0.4618, Avg Value: -0.4634
-Iteration 770: Avg Reward: -0.4450, Avg Value: -0.4359
-Iteration 780: Avg Reward: -0.4458, Avg Value: -0.4551
-Iteration 790: Avg Reward: -0.4455, Avg Value: -0.4506
-Iteration 800: Avg Reward: -0.4452, Avg Value: -0.4339
-Iteration 810: Avg Reward: -0.4333, Avg Value: -0.4572
-Iteration 820: Avg Reward: -0.4449, Avg Value: -0.4427
-Iteration 830: Avg Reward: -0.4350, Avg Value: -0.4417
-Iteration 840: Avg Reward: -0.4455, Avg Value: -0.4627
-Iteration 850: Avg Reward: -0.4468, Avg Value: -0.4489
-Iteration 860: Avg Reward: -0.4604, Avg Value: -0.4359
-Iteration 870: Avg Reward: -0.4542, Avg Value: -0.4457
-Iteration 880: Avg Reward: -0.4340, Avg Value: -0.4435
-Iteration 890: Avg Reward: -0.4408, Avg Value: -0.4514
-Iteration 900: Avg Reward: -0.4614, Avg Value: -0.4698
-Iteration 910: Avg Reward: -0.4392, Avg Value: -0.4430
-Iteration 920: Avg Reward: -0.4492, Avg Value: -0.4374
-Iteration 930: Avg Reward: -0.4587, Avg Value: -0.4534
-Iteration 940: Avg Reward: -0.4501, Avg Value: -0.4440
-Iteration 950: Avg Reward: -0.4599, Avg Value: -0.4543
-Iteration 960: Avg Reward: -0.4596, Avg Value: -0.4566
-Iteration 970: Avg Reward: -0.4700, Avg Value: -0.4744
-Iteration 980: Avg Reward: -0.4439, Avg Value: -0.4924
-Iteration 990: Avg Reward: -0.4537, Avg Value: -0.4713
-Iteration 1000: Avg Reward: -0.4408, Avg Value: -0.4644
-Iteration 1010: Avg Reward: -0.4367, Avg Value: -0.4479
-Iteration 1020: Avg Reward: -0.4437, Avg Value: -0.4652
-Iteration 1030: Avg Reward: -0.4666, Avg Value: -0.4576
-Iteration 1040: Avg Reward: -0.4287, Avg Value: -0.4345
-Iteration 1050: Avg Reward: -0.4470, Avg Value: -0.4427
-Iteration 1060: Avg Reward: -0.4481, Avg Value: -0.4644
-Iteration 1070: Avg Reward: -0.4476, Avg Value: -0.4620
-Iteration 1080: Avg Reward: -0.4460, Avg Value: -0.4515
-Iteration 1090: Avg Reward: -0.4323, Avg Value: -0.4429
-Iteration 1100: Avg Reward: -0.4375, Avg Value: -0.4528
-Iteration 1110: Avg Reward: -0.4201, Avg Value: -0.4308
-Iteration 1120: Avg Reward: -0.4518, Avg Value: -0.4561
-Iteration 1130: Avg Reward: -0.4453, Avg Value: -0.4518
-Iteration 1140: Avg Reward: -0.4676, Avg Value: -0.4503
-Iteration 1150: Avg Reward: -0.4557, Avg Value: -0.4617
-Iteration 1160: Avg Reward: -0.4513, Avg Value: -0.4364
-Iteration 1170: Avg Reward: -0.4486, Avg Value: -0.4333
-Iteration 1180: Avg Reward: -0.4477, Avg Value: -0.4340
-Iteration 1190: Avg Reward: -0.4499, Avg Value: -0.4489
-Iteration 1200: Avg Reward: -0.4502, Avg Value: -0.4597
-Iteration 1210: Avg Reward: -0.4301, Avg Value: -0.4614
-Iteration 1220: Avg Reward: -0.4362, Avg Value: -0.4324
-Iteration 1230: Avg Reward: -0.4560, Avg Value: -0.4484
-Iteration 1240: Avg Reward: -0.4361, Avg Value: -0.4305
-Iteration 1250: Avg Reward: -0.4490, Avg Value: -0.4501
-Iteration 1260: Avg Reward: -0.4447, Avg Value: -0.4584
-Iteration 1270: Avg Reward: -0.4489, Avg Value: -0.4360
-Iteration 1280: Avg Reward: -0.4413, Avg Value: -0.4451
-Iteration 1290: Avg Reward: -0.4516, Avg Value: -0.4598
-Iteration 1300: Avg Reward: -0.4277, Avg Value: -0.4242
-Iteration 1310: Avg Reward: -0.4392, Avg Value: -0.4184
-Iteration 1320: Avg Reward: -0.4328, Avg Value: -0.4415
-Iteration 1330: Avg Reward: -0.4304, Avg Value: -0.4726
-Iteration 1340: Avg Reward: -0.4293, Avg Value: -0.4295
-Iteration 1350: Avg Reward: -0.4357, Avg Value: -0.4456
-Iteration 1360: Avg Reward: -0.4380, Avg Value: -0.4580
-Iteration 1370: Avg Reward: -0.4421, Avg Value: -0.4342
-Iteration 1380: Avg Reward: -0.4539, Avg Value: -0.4493
-Iteration 1390: Avg Reward: -0.4491, Avg Value: -0.4667
-Iteration 1400: Avg Reward: -0.4338, Avg Value: -0.4252
-Iteration 1410: Avg Reward: -0.4483, Avg Value: -0.4536
-Iteration 1420: Avg Reward: -0.4344, Avg Value: -0.4400
-Iteration 1430: Avg Reward: -0.4395, Avg Value: -0.4420
-Iteration 1440: Avg Reward: -0.4543, Avg Value: -0.4539
-Iteration 1450: Avg Reward: -0.4320, Avg Value: -0.4281
-Iteration 1460: Avg Reward: -0.4499, Avg Value: -0.4346
-Iteration 1470: Avg Reward: -0.4301, Avg Value: -0.4640
-Iteration 1480: Avg Reward: -0.4313, Avg Value: -0.4341
-Iteration 1490: Avg Reward: -0.4325, Avg Value: -0.4373
-Iteration 1500: Avg Reward: -0.4466, Avg Value: -0.4598
-Iteration 1510: Avg Reward: -0.4408, Avg Value: -0.4613
-Iteration 1520: Avg Reward: -0.4542, Avg Value: -0.4357
-Iteration 1530: Avg Reward: -0.4599, Avg Value: -0.4629
-Iteration 1540: Avg Reward: -0.4498, Avg Value: -0.4298
-Iteration 1550: Avg Reward: -0.4469, Avg Value: -0.4614
-Iteration 1560: Avg Reward: -0.4532, Avg Value: -0.4564
-Iteration 1570: Avg Reward: -0.4431, Avg Value: -0.4447
-Iteration 1580: Avg Reward: -0.4567, Avg Value: -0.4545
-Iteration 1590: Avg Reward: -0.4420, Avg Value: -0.4286
-Iteration 1600: Avg Reward: -0.4331, Avg Value: -0.4537
-Iteration 1610: Avg Reward: -0.4290, Avg Value: -0.4379
-Iteration 1620: Avg Reward: -0.4457, Avg Value: -0.4370
-Iteration 1630: Avg Reward: -0.4581, Avg Value: -0.4307
-Iteration 1640: Avg Reward: -0.4449, Avg Value: -0.4178
-Iteration 1650: Avg Reward: -0.4441, Avg Value: -0.4305
-Iteration 1660: Avg Reward: -0.4728, Avg Value: -0.4579
-Iteration 1670: Avg Reward: -0.4427, Avg Value: -0.4367
-Iteration 1680: Avg Reward: -0.4550, Avg Value: -0.4733
-Iteration 1690: Avg Reward: -0.4524, Avg Value: -0.4540
-Iteration 1700: Avg Reward: -0.4564, Avg Value: -0.4349
-Iteration 1710: Avg Reward: -0.4454, Avg Value: -0.4613
-Iteration 1720: Avg Reward: -0.4610, Avg Value: -0.4685
-Iteration 1730: Avg Reward: -0.4475, Avg Value: -0.4351
-Iteration 1740: Avg Reward: -0.4306, Avg Value: -0.4312
-Iteration 1750: Avg Reward: -0.4184, Avg Value: -0.4369
-Iteration 1760: Avg Reward: -0.4390, Avg Value: -0.4463
-Iteration 1770: Avg Reward: -0.4361, Avg Value: -0.4206
-Iteration 1780: Avg Reward: -0.4346, Avg Value: -0.4301
-Iteration 1790: Avg Reward: -0.4498, Avg Value: -0.4594
-Iteration 1800: Avg Reward: -0.4634, Avg Value: -0.4539
-Iteration 1810: Avg Reward: -0.4343, Avg Value: -0.4550
-Iteration 1820: Avg Reward: -0.4461, Avg Value: -0.4467
-Iteration 1830: Avg Reward: -0.4833, Avg Value: -0.4636
-Iteration 1840: Avg Reward: -0.4466, Avg Value: -0.4590
-Iteration 1850: Avg Reward: -0.4310, Avg Value: -0.4361
-Iteration 1860: Avg Reward: -0.4486, Avg Value: -0.4665
-Iteration 1870: Avg Reward: -0.4451, Avg Value: -0.4422
-Iteration 1880: Avg Reward: -0.4613, Avg Value: -0.4416
-Iteration 1890: Avg Reward: -0.4645, Avg Value: -0.4655
-Iteration 1900: Avg Reward: -0.4450, Avg Value: -0.4580
-Iteration 1910: Avg Reward: -0.4375, Avg Value: -0.4466
-Iteration 1920: Avg Reward: -0.4419, Avg Value: -0.4503
-Iteration 1930: Avg Reward: -0.4281, Avg Value: -0.4332
-Iteration 1940: Avg Reward: -0.4469, Avg Value: -0.4395
-Iteration 1950: Avg Reward: -0.4651, Avg Value: -0.4515
-Iteration 1960: Avg Reward: -0.4609, Avg Value: -0.4681
-Iteration 1970: Avg Reward: -0.4462, Avg Value: -0.4187
-Iteration 1980: Avg Reward: -0.4392, Avg Value: -0.4611
-Iteration 1990: Avg Reward: -0.4371, Avg Value: -0.4228
-Iteration 2000: Avg Reward: -0.4184, Avg Value: -0.4419
-Iteration 2010: Avg Reward: -0.4443, Avg Value: -0.4427
-Iteration 2020: Avg Reward: -0.4442, Avg Value: -0.4698
-Iteration 2030: Avg Reward: -0.4442, Avg Value: -0.4406
-Iteration 2040: Avg Reward: -0.4533, Avg Value: -0.4575
-Iteration 2050: Avg Reward: -0.4274, Avg Value: -0.4381
-Iteration 2060: Avg Reward: -0.4163, Avg Value: -0.4382
-Iteration 2070: Avg Reward: -0.4436, Avg Value: -0.4350
-Iteration 2080: Avg Reward: -0.4239, Avg Value: -0.4469
-Iteration 2090: Avg Reward: -0.4529, Avg Value: -0.4403
-Iteration 2100: Avg Reward: -0.4348, Avg Value: -0.4294
-Iteration 2110: Avg Reward: -0.4415, Avg Value: -0.4720
-Iteration 2120: Avg Reward: -0.4531, Avg Value: -0.4558
-Iteration 2130: Avg Reward: -0.4344, Avg Value: -0.4551
-Iteration 2140: Avg Reward: -0.4356, Avg Value: -0.4176
-Iteration 2150: Avg Reward: -0.4255, Avg Value: -0.4336
-Iteration 2160: Avg Reward: -0.4503, Avg Value: -0.4509
-Iteration 2170: Avg Reward: -0.4253, Avg Value: -0.4400
-Iteration 2180: Avg Reward: -0.4070, Avg Value: -0.4117
-Iteration 2190: Avg Reward: -0.4037, Avg Value: -0.4208
-Iteration 2200: Avg Reward: -0.4354, Avg Value: -0.4284
-Iteration 2210: Avg Reward: -0.4351, Avg Value: -0.4144
-Iteration 2220: Avg Reward: -0.4018, Avg Value: -0.4081
-Iteration 2230: Avg Reward: -0.3980, Avg Value: -0.4050
-Iteration 2240: Avg Reward: -0.4485, Avg Value: -0.4206
-Iteration 2250: Avg Reward: -0.4090, Avg Value: -0.4065
-Iteration 2260: Avg Reward: -0.4351, Avg Value: -0.4385
-Iteration 2270: Avg Reward: -0.4602, Avg Value: -0.4225
-Iteration 2280: Avg Reward: -0.4232, Avg Value: -0.4145
-Iteration 2290: Avg Reward: -0.3984, Avg Value: -0.4011
-Iteration 2300: Avg Reward: -0.4170, Avg Value: -0.4275
-Iteration 2310: Avg Reward: -0.4311, Avg Value: -0.4247
-Iteration 2320: Avg Reward: -0.4130, Avg Value: -0.4107
-Iteration 2330: Avg Reward: -0.4142, Avg Value: -0.4124
-Iteration 2340: Avg Reward: -0.4251, Avg Value: -0.4303
-Iteration 2350: Avg Reward: -0.4014, Avg Value: -0.4248
-Iteration 2360: Avg Reward: -0.4031, Avg Value: -0.3988
-Iteration 2370: Avg Reward: -0.3944, Avg Value: -0.4032
-Iteration 2380: Avg Reward: -0.4142, Avg Value: -0.4215
-Iteration 2390: Avg Reward: -0.4153, Avg Value: -0.4049
-Iteration 2400: Avg Reward: -0.4125, Avg Value: -0.4096
-Iteration 2410: Avg Reward: -0.4049, Avg Value: -0.4080
-Iteration 2420: Avg Reward: -0.4261, Avg Value: -0.4282
-Iteration 2430: Avg Reward: -0.4222, Avg Value: -0.4145
-Iteration 2440: Avg Reward: -0.4053, Avg Value: -0.4311
-Iteration 2450: Avg Reward: -0.4029, Avg Value: -0.4000
-Iteration 2460: Avg Reward: -0.3941, Avg Value: -0.3962
-Iteration 2470: Avg Reward: -0.4199, Avg Value: -0.4119
-Iteration 2480: Avg Reward: -0.4201, Avg Value: -0.4229
-Iteration 2490: Avg Reward: -0.3905, Avg Value: -0.3992
-Iteration 2500: Avg Reward: -0.4096, Avg Value: -0.4026
-Iteration 2510: Avg Reward: -0.4315, Avg Value: -0.4284
-Iteration 2520: Avg Reward: -0.4040, Avg Value: -0.3968
-Iteration 2530: Avg Reward: -0.4081, Avg Value: -0.4027
-Iteration 2540: Avg Reward: -0.4262, Avg Value: -0.3919
-Iteration 2550: Avg Reward: -0.4265, Avg Value: -0.4321
-Iteration 2560: Avg Reward: -0.3973, Avg Value: -0.4034
-Iteration 2570: Avg Reward: -0.3947, Avg Value: -0.3874
-Iteration 2580: Avg Reward: -0.4291, Avg Value: -0.4344
-Iteration 2590: Avg Reward: -0.4250, Avg Value: -0.4464
-Iteration 2600: Avg Reward: -0.4028, Avg Value: -0.4106
-Iteration 2610: Avg Reward: -0.4004, Avg Value: -0.3957
-Iteration 2620: Avg Reward: -0.4286, Avg Value: -0.4293
-Iteration 2630: Avg Reward: -0.4021, Avg Value: -0.3986
-Iteration 2640: Avg Reward: -0.4064, Avg Value: -0.4057
-Iteration 2650: Avg Reward: -0.4066, Avg Value: -0.4077
-Iteration 2660: Avg Reward: -0.3826, Avg Value: -0.3878
-Iteration 2670: Avg Reward: -0.3957, Avg Value: -0.3911
-Iteration 2680: Avg Reward: -0.3872, Avg Value: -0.3967
-Iteration 2690: Avg Reward: -0.3860, Avg Value: -0.4106
-Iteration 2700: Avg Reward: -0.4052, Avg Value: -0.3861
-Iteration 2710: Avg Reward: -0.4011, Avg Value: -0.3881
-Iteration 2720: Avg Reward: -0.3991, Avg Value: -0.4292
-Iteration 2730: Avg Reward: -0.3756, Avg Value: -0.3809
-Iteration 2740: Avg Reward: -0.4225, Avg Value: -0.4051
-Iteration 2750: Avg Reward: -0.3989, Avg Value: -0.4255
-Iteration 2760: Avg Reward: -0.4038, Avg Value: -0.3936
-Iteration 2770: Avg Reward: -0.4287, Avg Value: -0.4217
-Iteration 2780: Avg Reward: -0.4061, Avg Value: -0.4021
-Iteration 2790: Avg Reward: -0.3906, Avg Value: -0.3918
-Iteration 2800: Avg Reward: -0.3857, Avg Value: -0.4135
-Iteration 2810: Avg Reward: -0.3832, Avg Value: -0.4042
-Iteration 2820: Avg Reward: -0.4080, Avg Value: -0.4094
-Iteration 2830: Avg Reward: -0.4066, Avg Value: -0.4113
-Iteration 2840: Avg Reward: -0.3865, Avg Value: -0.3950
-Iteration 2850: Avg Reward: -0.4136, Avg Value: -0.4089
-Iteration 2860: Avg Reward: -0.4026, Avg Value: -0.4208
-Iteration 2870: Avg Reward: -0.4047, Avg Value: -0.3542
-Iteration 2880: Avg Reward: -0.3908, Avg Value: -0.4121
-Iteration 2890: Avg Reward: -0.4050, Avg Value: -0.4278
-Iteration 2900: Avg Reward: -0.3973, Avg Value: -0.4031
-Iteration 2910: Avg Reward: -0.3847, Avg Value: -0.3942
-Iteration 2920: Avg Reward: -0.4065, Avg Value: -0.4018
-Iteration 2930: Avg Reward: -0.4090, Avg Value: -0.4034
-Iteration 2940: Avg Reward: -0.3939, Avg Value: -0.3976
-Iteration 2950: Avg Reward: -0.4174, Avg Value: -0.3994
-Iteration 2960: Avg Reward: -0.4207, Avg Value: -0.4010
-Iteration 2970: Avg Reward: -0.3856, Avg Value: -0.4071
-Iteration 2980: Avg Reward: -0.4239, Avg Value: -0.4289
-Iteration 2990: Avg Reward: -0.4058, Avg Value: -0.4107
-Training completed!
-TensorBoard logs saved. Run: tensorboard --logdir ./logs/tensorboard
-Model saved to ./logs/dog_policy.pth
-[INFO]: SimulationContext cleared
+Environment created with 4096 envs
+--------------------------------------------------------------------------------
+Resolved observation sets: 
+	 actor :  ['policy']
+	 critic :  ['policy']
+--------------------------------------------------------------------------------
+Actor Model: MLPModel(
+  (obs_normalizer): Identity()
+  (mlp): MLP(
+    (0): Linear(in_features=48, out_features=128, bias=True)
+    (1): ELU(alpha=1.0)
+    (2): Linear(in_features=128, out_features=128, bias=True)
+    (3): ELU(alpha=1.0)
+    (4): Linear(in_features=128, out_features=128, bias=True)
+    (5): ELU(alpha=1.0)
+    (6): Linear(in_features=128, out_features=12, bias=True)
+  )
+)
+Critic Model: MLPModel(
+  (obs_normalizer): Identity()
+  (mlp): MLP(
+    (0): Linear(in_features=48, out_features=128, bias=True)
+    (1): ELU(alpha=1.0)
+    (2): Linear(in_features=128, out_features=128, bias=True)
+    (3): ELU(alpha=1.0)
+    (4): Linear(in_features=128, out_features=128, bias=True)
+    (5): ELU(alpha=1.0)
+    (6): Linear(in_features=128, out_features=1, bias=True)
+  )
+)
+Starting training...
+Could not find git repository in /home/jimi/anaconda3/envs/isaac_lab_final/lib/python3.12/site-packages/rsl_rl/__init__.py. Skipping.
+Traceback (most recent call last):
+  File "/home/jimi/IsaacLab/train_dog_rsl.py", line 155, in <module>
+    main()
+  File "/home/jimi/IsaacLab/train_dog_rsl.py", line 149, in main
+    runner.learn(num_learning_iterations=args.max_iterations, init_at_random_ep_len=True)
+  File "/home/jimi/anaconda3/envs/isaac_lab_final/lib/python3.12/site-packages/rsl_rl/runners/on_policy_runner.py", line 108, in learn
+    loss_dict = self.alg.update()
+                ^^^^^^^^^^^^^^^^^
+  File "/home/jimi/anaconda3/envs/isaac_lab_final/lib/python3.12/site-packages/rsl_rl/algorithms/ppo.py", line 207, in update
+    for batch in generator:
+                 ^^^^^^^^^
+  File "/home/jimi/anaconda3/envs/isaac_lab_final/lib/python3.12/site-packages/rsl_rl/storage/rollout_storage.py", line 257, in mini_batch_generator
+    old_distribution_params=tuple(p[batch_idx] for p in old_distribution_params),
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jimi/anaconda3/envs/isaac_lab_final/lib/python3.12/site-packages/rsl_rl/storage/rollout_storage.py", line 257, in <genexpr>
+    old_distribution_params=tuple(p[batch_idx] for p in old_distribution_params),
+                                  ~^^^^^^^^^^^
+IndexError: index 22988 is out of bounds for dimension 0 with size 16
+(isaac_lab_final) jimi@jimi-JIGUANG-Series:~/IsaacLab$ 
+
