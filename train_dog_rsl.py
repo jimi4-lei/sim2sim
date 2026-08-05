@@ -34,22 +34,22 @@ def main():
     # ===== 配置中添加 save_interval =====
     agent_cfg = {
         "seed": 42,
-        "num_steps_per_env": 24,
+        "num_steps_per_env": 48,
         "max_iterations": args.max_iterations,
         "save_interval": 50,  # 每 50 轮保存一次模型
         "experiment_name": "dog_flat",
         "empirical_normalization": False,
-        "init_noise_std": 2.0,
+        "init_noise_std": 1.5,
         "obs_groups": {"actor": ["policy"], "critic": ["policy"]},
         "algorithm": {
             "class_name": "PPO",
             "value_loss_coef": 1.0,
             "use_clipped_value_loss": True,
             "clip_param": 0.2,
-            "entropy_coef": 0.005,
-            "num_learning_epochs": 5,
-            "num_mini_batches": 4,
-            "learning_rate": 1.0e-3,
+            "entropy_coef": 0.01,
+            "num_learning_epochs": 10,
+            "num_mini_batches": 8,
+            "learning_rate": 3.0e-4,
             "schedule": "adaptive",
             "gamma": 0.99,
             "lam": 0.95,
@@ -58,15 +58,15 @@ def main():
         },
         "actor": {
             "class_name": "MLPModel",
-            "hidden_dims": [128, 128, 128],
+            "hidden_dims": [256, 256, 128],
             "activation": "elu",
-            "obs_normalization": False,
+            "obs_normalization": True,
         },
         "critic": {
             "class_name": "MLPModel",
-            "hidden_dims": [128, 128, 128],
+            "hidden_dims": [256, 256, 128],
             "activation": "elu",
-            "obs_normalization": False,
+            "obs_normalization": True,
         },
         "runner": {
             "class_name": "OnPolicyRunner",
